@@ -1,0 +1,131 @@
+
+{
+    "create-categorie":[
+        {
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+    "update-categorie":[
+        {
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+    "delete-categorie":[
+        {
+            "id": "GUID"
+        }
+    ],
+    "read-all-categorie":[
+        {
+            "id": "GUID",
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+     "read-specific-categorie":[
+        {
+            "id": "GUID"
+        },
+        {
+            "id": "GUID",
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+     "read-by-name-categorie":[
+        {
+            "name": "string"
+        },
+         {
+            "id": "GUID",
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+     "read-by-parent-categorie":[
+        {
+            "ParentCategory": "GUID, nullable"
+        
+        },
+        {
+            "id": "GUID",
+            "name": "string",
+            "ParentCategory": "GUID, nullable"
+        }
+    ],
+
+     "create-product":[
+        {
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ],
+    "update-product":[
+        {
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ],
+    "delete-product":[
+        {
+            "id": "GUID"
+        }
+    ],
+    "read-all-product":[
+        {
+            "id":"GUID",
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ],
+      "read-by-id-product":[
+        {
+            "id":"GUID"
+        },
+        {
+            "id":"GUID",
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ],
+    "read-by-name-product":[
+        {
+            "name":"string"
+        },
+        {
+            "id":"GUID",
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ],
+    "read-by-categorie-product":[
+        {
+            "categorieID":"GUID"
+        },
+        {
+            "id":"GUID",
+            "Name":"string",
+            "Description":"text",
+            "Reference":"varchar",
+            "PrixUnitaire": "float",
+            "CatetoryID": "GUID"
+        }
+    ]
+}
